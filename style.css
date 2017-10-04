@@ -70,6 +70,10 @@ body p{
   display: table-cell;
   vertical-align: top;
 }
+.row.no-pad p{
+	text-align: justify;
+    text-justify: inter-word;
+}
 
 .sepeartor{
 	 background-color: #FFEB3B; height: 4px; width: 88%; margin: auto;
@@ -84,18 +88,25 @@ body p{
 }
 
  .item{
- 	height: 500px;
+ 	height: 100%;
  }
 
 .carousel-control.left, .carousel-control.right {
     background-image: none
 }
 
+.carousel-caption{
+	width: 60%;
+
+}
 
 
 .projects{
 	background-image: url(images/19989aa3.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	background: rgba(3,169,244, 0.4);
+	background-size: 100%;
 
 }
 
