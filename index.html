@@ -1,133 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-   <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
+</head>
+<body>
 
-		 <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
-		<link rel="icon" href="/images/logo.png">
-		 <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
-		<title>Sid's spot</title>
-	</head>
-	<body>
-		<div class="header">
-		<span>Sid's website</span>
-		<nav>
-			<i class="fa fa-home custom"> Home </i>
-			<i class="fa fa-envelope" aria-hidden="true"> Contact </i>
-			<i class="fa fa-user custom"> About </i>
-			
-		</nav>
-		</div>
-<div class="image">
- 		<h1 style="height:50px; padding-bottom: 5px;"> Sid's website</h1>
- 		<div class="personal-image-container"> 
- 		<img src="images/profile.jpg" class="personal-image">
- 		</div>
- 		<div class="type-writer">
- 		<h1 style="size:100px "> Code, Develop, Build.</h1>
- 		</div>
+<div class="header">
+            <h1>Siddharth</h1>
 </div>
 
-<div class="work-ex">
-		<h1> Professional Experience </h1>
-		<div class="yahoo">
-		<div class="work-img-container">
-		<img src="images/yahoo.png" class="work-img"> 
-		</div>
-<!-- 		<div class="work-partitioner"></div> -->
-		<div class="work-main">
-			<h2> Technical Intern, II </h2>
-			<p style="color:#26A69A; padding-left: 10%"> Worked with Analytics team in Video Engineering department.
-			Worked on real time streaming project which estimated over 1.6 million views. </p>
-		</div>
-		 </div>
-		<div class="tcs"> 
-					<div class="work-img-container">
-		<img src="images/tcs.png" class="work-img"> 
-		</div>
-<!-- 		<div class="work-partitioner"></div> -->
-		<div class="work-main">
-			<h2> Assistant System Engineer </h2>
-			<p style="color:#26A69A; padding-left: 10%"> Part of L2 team which worked on Authentication, User permissions and data management. </p>
-		</div>
-		</div>
-</div>
-   		<h1> Technologies </h1>
-<div class="technologies">
-	<img src="images/html.png" class="logo">
-	<img src="images/css.png" class="logo">
-<img src="images/js.svg" class="logo">
-<img src="images/node.png" class="logo">
-<img src="images/Angular.png" class="logo">
-<img src="images/java.png" class="logo">
-<img src="images/maven.png" class="logo">
-<img src="images/git.png" class="logo">
-<img src="images/kafka.png" class="logo">
-</div>
+<div class="container">
+  <div id="myCarousel" class="carousel slide row" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-<h1> Project </h1>
-<div class="imageProject">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active " id = "cloud">
+        <img src="images/19989aa3.png" class="img-responsive" alt="cloud" style="width:100%; opacity: 0.4;
+    filter: alpha(opacity=50);">
+        <div class="carousel-caption">
+        <h3>Develop | Innovate | Design</h3>
+        <p>Cloud Solutions</p>
+      </div>
 
-<div>
-  
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg" alt="">
-      <figcaption>
-        A search engine using Python and Java along with MEAN stack.
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg05.jpg">
-    <figure>
-      <img src="images/cloud.jpg" alt="">
-      <figcaption>
-        An e-commerce website using Java, J2EE stack which provided all functionalities.
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg06.jpg">	
-    <figure>
-      <img src="images/bills.jpg" alt="">
-      <figcaption>
-        A billing service implementation using distributed system and middleware tools.
-      </figcaption>
-    </figure>
-  </a>
-  <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg07.jpg">
-    <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg07.jpg" alt="">
-       <figcaption>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
-      </figcaption>
-    </figure>
-  </a>
+<!--      <div class = "inner"> Cloud Applications</div>
+ -->      </div>
+
+      <div class="item" id = "analytics">
+       <img src="images/19989aa3.png" alt="analytics" class="img-responsive" style="width:100%; opacity: 0.4;
+    filter: alpha(opacity=50);">
+
+    <div class="carousel-caption">
+        <h3>Develop | Innovate | Design</h3>
+        <p>Big Data Analytics</p>
+<!--                  <div class = "inner"> Big Data and Analysis</div>
+ -->
+     </div>
+     </div>
+    
+      <div class="item"  id = "webdev">
+         <img src="images/19989aa3.png" alt="web dev" class="img-responsive" style="width:100%; opacity: 0.4;
+    filter: alpha(opacity=50);">
+    <div class="carousel-caption">
+        <h3>Develop | Innovate | Design</h3>
+        <p>Web Development</p>
+<!--       <div class = "inner"> Web Development</div> -->
  
+     </div>
+    </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" style="color: #FF7F50; font-size: 40px;"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" style="color: #FF7F50; font-size: 40px;"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+  <div class = "sepeartor"></div>
+
+
+
+<div class = "intro">
+  <p style="font-size: 29px; margin-bottom: 2px; color: #fff; text-decoration-line: underline;">About Me</p>
+  <p style="color: #fff;"> Welcome, to my home on the internet. I am a graduate student pursuing MS in Computer Engieerning at University of California, Irvine. I am currently looking for full-time opportunities starting January-2018 in field of Software Development. Fields of my interest are, Cloud computing, Web Develpment, Big Data Analytics and Platform Engineering. Previously, I have worked with reputed companies such as Yahoo, Inc.</p>
+ 
+</div>
+  <div class ="sepeartor"> </div>
+
+
+<p style="font-size: 29px; margin-bottom: 2px; text-decoration-line: underline;">Projects</p>
+
+
+<div class = "projects" style="height: 30%;">
+
+  <div class="row no-pad" style="height: 33.33%;">
+
+    <div class="col-sm-6" style="border: solid 1px #BDBDBD;height: 100%;">
+
+       <p style="font-size: 29px; margin-bottom: 2px; text-decoration-line: underline;">Billing Service Using Kafka</p>
+       <p style="color: #FFF; font-size: 26px;">Designed a publisher-subscriber based messaging system, simulated transaction process of a billing service using Java and Apache Kafka on a cluster of AWS EC2 instances to reflect the real world scenarios, evaluated the system performance in terms of latency, throughput and durability.</p>
+    </div>
+    <div class="col-sm-6" style="border: solid 1px #BDBDBD; background-color: #FF7F50;  ">
+       <p style="font-size: 29px; margin-bottom: 2px; text-decoration-line: underline;">Search Engine For Department Domain</p>
+       <p style="color: #FFF; font-size: 26px;"">Developed a crawler based on java to create inverted indexes and fetched the indexes from non-relational database MongoDB. Calculated relevancy of documents by using TF-IDF, page rank, title tag and proximity of tokens. Displayed the output on a single page application built with JavaScript and Angular.js.</p>    
+    </div>
+    </div>
+
+    <div class="row no-pad" style="height: 33.33%;">
+    <div class="col-sm-6" style="border: solid 1px #BDBDBD; background-color: #FF7F50">
+       <p style="font-size: 29px; margin-bottom: 2px; text-decoration-line: underline;">Data Analysis using MapReduce Paradigm</p>
+       <p style="color: #FFF; font-size: 26px;">Wrote MapReduce jobs for designing reverse weblink graphs and to detect volatile stocks using Yahoo Finance API in pseudo-distributed mode with Hadoop.</p>
+    </div>
+    <div class="col-sm-6" style="border: solid 1px #BDBDBD; background-color: /*#FFC107*/">
+       <p style="font-size: 29px; margin-bottom: 2px; text-decoration-line: underline;">Thread System design-Nachos OS</p>
+       <p style="color: #FFF;font-size: 26px;">Implemented thread utility functions in java for thread fork, join, scheduling and other functionalities such as synchronous message passing and interrupt.</p>    
+    </div>
+    </div>
+
+
+     <div class="row no-pad" style="height: 33.33%;">
+      <div class="col-sm-6" style="border: solid 1px #BDBDBD; background-color:   /*#FFC107*/ /*#FF7F50*/">
+       <p style="font-size: 29px; margin-bottom: 2px; text-decoration-line: underline;">FabFlix: E-commerce website and Android application</p>
+       <p style="color: #FFF;font-size: 26px;">Built an E-commerce platform for web and Android. Used Java-EE components- JSP and Servlet for the website. Improved the performance using database replication, connection pooling for MySQL and load balancing using Apache http server. Implemented features such as fuzzy search, shopping-cart and cookie management to improve user experience</p>
+    </div>
+    <div class="col-sm-6" style="border: solid 1px #BDBDBD ; background-color: #FF7F50 ">
+       <p style="font-size: 29px; margin-bottom: 2px; text-decoration-line: underline;">Advanced User Security Module</p>
+       <p style="color: #FFF; font-size: 26px;">Interfaced and programmed various sensors to connect to ARM7 board with LPC2148 microcontroller. Wrote a modular C++ code so that it can be modified and updated easily depending on the number of interface devices and dependencies among them. Some peripheral devices use were MQ3 gas sensor, PIR sensor, IR modules.</p>    
+    </div>
+    </div>
+    
+
+</div>
+
+  <div class = "sepeartor"></div>
+
+<p style="font-size: 29px; margin-bottom: 2px; text-decoration-line: underline;">Work Experience</p>
+<div class="work-ex">
 
 </div>
 
 
-</div>
-<div class="footer">
-<nav class="footerNav">
-	<i  class="fa fa-facebook fa-2x spacer" aria-hidden="true"></i>
-	<i class="fa fa-github fa-2x spacer" aria-hidden="true"></i>
-	<i class="fa fa-linkedin fa-2x spacer" aria-hidden="true"></i>
-	<a style="text-decoration: none" href="#"><i class="fa fa-download fa-2x spacer" aria-hidden="true" alt="resume"></i></a>
-</nav>
-
-</div>
-
+    
 </body>
 </html>
