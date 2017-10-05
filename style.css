@@ -17,7 +17,7 @@ body{
 	width: 80%;
 	font-family: 'Lato', sans-serif;
 	margin:auto;
-	background-image: url(images/fixex);
+	background-image: url(images/fixex.png);
 	background-attachment: fixed;
 /*	opacity: 1.6;	
 */	color: #fff;
