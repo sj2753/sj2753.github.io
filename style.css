@@ -57,7 +57,7 @@ body p{
 	color: #212121 ;
 	font-size: 26px;
 }
-
+@media (min-width:768px){
 .row.no-pad {
   margin-right:0;
   margin-left:0;
@@ -68,13 +68,29 @@ body p{
   padding-left:2px;
   float: none;
   display: table-cell;
+  
   vertical-align: top;
 }
 .row.no-pad p{
 	text-align: justify;
     text-justify: inter-word;
 }
+}
 
+@media (max-width:768px){
+.row.no-pad {
+  margin-right:0;
+  margin-left:0;
+}
+.row.no-pad > [class*='col-'] {
+  float: none;
+  width: 100%;
+  max-width: 600px;
+}
+.row.no-pad p{
+	font-size: 14px;
+}
+}
 .sepeartor{
 	 background-color: #FFEB3B; height: 4px; width: 88%; margin: auto;
 	 margin-top: 10px; 
@@ -97,18 +113,42 @@ body p{
 
 .carousel-caption{
 	width: 60%;
+}
+
+@media (max-width: 784px){
+
+.carousel-caption{
+	width: 60%;
+	margin-left: 8%;
+}
 
 }
 
 
 .projects{
-	background-image: url(images/19989aa3.png);
+	/*background-image: url(images/19989aa3.png);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background: rgba(3,169,244, 0.4);
-	background-size: 100%;
+	background-size: 100%;*/
 
 }
+/*@media screen and (max-width:  732px){
+
+.row.no-pad > [class*='col-'] {
+  float: none;
+  width: 100%;
+  padding-right:0;
+  padding-left:2px;
+  vertical-align: top;
+}
+
+.col-xs-12{
+	float: none;
+	width: 100%;
+}
+
+}*/
 
 
 
