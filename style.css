@@ -59,6 +59,9 @@ body p{
 	font-size: 26px;
 }
 @media (min-width:768px){
+ .row p{
+ 	font-size: 26px;
+ }
 .row.no-pad {
   margin-right:0;
   margin-left:0;
@@ -79,6 +82,11 @@ body p{
 }
 
 @media (max-width:768px){
+	body p{
+	color: #fff;
+	font-size: 21px;
+}
+	.row p{ font-size: 19px }
 .row.no-pad {
   margin-right:0;
   margin-left:0;
@@ -89,7 +97,7 @@ body p{
   max-width: 600px;
 }
 .row.no-pad p{
-	font-size: 14px;
+	font-size: 19px;
 }
 }
 .sepeartor{
