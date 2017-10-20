@@ -26,6 +26,7 @@ body{
 
 body p{
 	color: #fff;
+	font-size: 26px;
 }
 
 .header
@@ -45,11 +46,19 @@ body p{
 
 }
 
+.wrapper{
+/*	position: relative;
+*/}
+
 .intro{
 	
 	height: 12%;
+   
+    animation: my 0.5s forwards;
+    animation-direction: normal;
+/*    position: absolute;
+*/}
 
-}
 
 
 .intro p{
@@ -79,6 +88,8 @@ body p{
 	text-align: justify;
     text-justify: inter-word;
 }
+
+
 }
 
 @media (max-width:768px){
@@ -109,11 +120,10 @@ body p{
 .container{
 	/*border: 3px solid #BDBDBD;*/
 	width: 100%;
-
 }
 
  .item{
- 	height: 100%;
+ 	height: 300px;
  }
 
 .carousel-control.left, .carousel-control.right {
@@ -133,7 +143,72 @@ body p{
 
 }
 
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid rgba(3,169,244, 0.4) ;
+  border-radius: 50%;
+  border-top: 16px solid #FF7F50;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
 
+@media (min-width: 784px){
+#welcome {
+	position: absolute;
+	left: 42%;
+	top: 35%;
+
+}
+
+/*@media (max-width: 500px){
+#welcome {
+	position: absolute;
+	left: 35%;
+	top: 30%;
+}
+}*/
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
 .projects{
 	/*background-image: url(images/19989aa3.png);
 	background-attachment: fixed;

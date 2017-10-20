@@ -12,8 +12,16 @@
   <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body onload="myFunction()">
+<div id="loader">
 
+</div>
+
+<p id="welcome">
+  Welcome fellow peaseants!
+</p>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
 <div class="header">
             <h1>Siddharth</h1>
 </div>
@@ -80,21 +88,22 @@
   <div class = "sepeartor"></div>
 
 
-
+<div  class = "wrapper">
 <div class = "intro">
   <p style=" margin-bottom: 2px; color: #fff; text-decoration-line: underline;">About Me</p>
   <p style="color: #fff;"> Welcome, to my home on the internet. I am a graduate student pursuing MS in Computer Engieerning at University of California, Irvine. I am currently looking for full-time opportunities starting January-2018 in field of Software Development. Fields of my interest are, Cloud computing, Web Develpment, Big Data Analytics and Platform Engineering. Previously, I have worked with reputed companies such as Yahoo, Inc.</p>
  
 </div>
+</div>
   <div class ="sepeartor"> </div>
 
 
-<p style=" margin-bottom: 2px; text-decoration-line: underline;">Projects</p>
+<p style=" margin-bottom: 2px; text-decoration-line: underline;text-align: left">Projects</p>
 
 
 <div class = "projects" style="height: 30%; width: 100%;">
 
-  <div class="row no-pad" style="height: 33.33%;">
+  <div class="row no-pad" style="height: 33.33%; margin-left: 0; margin-right: 0; ">
 
     <div class="col-sm-6 col-xs-12" style="border: solid 1px #BDBDBD;height: 100%; background-color: rgba(3,169,244, 0.4);">
 
@@ -135,17 +144,17 @@
 
   <div class = "sepeartor"></div>
 
-<p style=" margin-bottom: 2px; text-decoration-line: underline;">Work Experience</p>
-<div class="work-ex">
-<div class="row " >
+<p style=" margin-bottom: 2px; text-decoration-line: underline; text-align: left">Work Experience</p>
+<div class="work-ex" >
+<div class="row " style=" margin-left: 0; margin-right: 0; text-align: justify;" >
 
-    <div class="col-sm-12 " style="border: solid 1px #BDBDBD;height: 100%; background-color: rgba(3,169,244, 0.4);">
+    <div class="col-lg-12 " style="border: solid 1px #BDBDBD;height: 100%; background-color: rgba(3,169,244, 0.4);">
 
-       <p style=" margin-bottom: 2px; text-decoration-line: underline;">Billing Service Using Kafka</p>
+       <p style=" margin-bottom: 2px; text-decoration-line: underline; text-align: left;">Billing Service Using Kafka</p>
        <p style="color: #FFF; ">Designed a publisher-subscriber based messaging system, simulated transaction process of a billing service using Java and Apache Kafka on a cluster of AWS EC2 instances to reflect the real world scenarios, evaluated the system performance in terms of latency, throughput and durability.</p>
     </div>
-    <div class="col-sm-12 " style="border: solid 1px #BDBDBD; background-color: #FF7F50;  ">
-       <p style=" margin-bottom: 2px; text-decoration-line: underline;">Search Engine For Department Domain</p>
+    <div class="col-lg-12 " style="border: solid 1px #BDBDBD; background-color: #FF7F50;  ">
+       <p style=" margin-bottom: 2px; text-decoration-line: underline; text-align: left;">Search Engine For Department Domain</p>
        <p style="color: #FFF; "">Developed a crawler based on java to create inverted indexes and fetched the indexes from non-relational database MongoDB. Calculated relevancy of documents by using TF-IDF, page rank, title tag and proximity of tokens. Displayed the output on a single page application built with JavaScript and Angular.js.</p>    
     </div>
     </div>
@@ -153,6 +162,21 @@
 </div>
 
 
-    
+</div>
+
+
+    <script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("welcome").style.display = "none";
+}
+</script>
 </body>
 </html>
